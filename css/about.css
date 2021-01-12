@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rubik/v11/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-2Y-FV0U1.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+#parentDiv{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+#contentDiv{
+    font-family: "Rubik";
+    color: rgb(0, 0, 0);
+    align-self: center;
+    margin-left: 70px;
+    text-align: center;
+    padding: 10px;
+    font-family:"Rubik";
+    background-image: linear-gradient(160deg, #cfd9df,#e2ebf0 );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+#about{
+    background-image: linear-gradient(180deg, #6f7a85,#485563 );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#aboutBoxesDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
+}
+#experienceDiv{
+    flex: 1 0 47%;
+    order: 1;
+}
+
+#educationDiv{
+    flex: 1 0 47%;
+    order: 2;
+}
+
+#personalDiv{
+    order: 3;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#citiesDiv{
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+}
+
+#parentCity{
+display: flex;
+justify-content:space-evenly;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+
+#btnsWrapper{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+
+.lists{
+
+    margin: 5px;
+    padding: 5px;
+    width: max-content;
+    border: 2px double black;
+}
+
+#map {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 8px;
+  }
+
+
+  #prevButton span {
+    
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #prevButton span:after {
+    content: '\00ab'; /* 00ab represents in unicode the char: '<<'*/
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+  }
+  
+  #prevButton:hover:not([disabled]) span {
+    padding-left: 25px;
+  }
+  
+  #prevButton:hover:not([disabled]) span:after {
+    opacity: 1;
+    left: 0;
+  }
+ 
+
+  #nextButton span {
+    
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #nextButton span:after {
+    content: '\00bb'; /* 00bb represents in unicode the char: '>>'*/
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #nextButton:hover:not([disabled]) span {
+    padding-right: 25px;
+  }
+  
+  #nextButton:hover:not([disabled]) span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
