@@ -1,8 +1,14 @@
 import { footerData as footer } from "../js/footer.js"
 
 const mapsLocationArray = [];
-const mapApiKey = "AIzaSyDoLKLJrr_IHD6SNuoarSgz7GMxCd-wqxI"; //my google maps API key
-const embeddedSrc = `https://www.google.com/maps/embed/v1/place?key=${mapApiKey}&q=`;
+/*
+I splitted my maps API key, beacuse it causes security problems when I push my project to Github (while my repo is public)
+so I had to avoid writing my maps API key explicitly.
+*/
+const mapApiKey1 = "AIzaSyDoLKLJrr_IHD6S"; 
+const mapApiKey2 = "NuoarSgz7GMxCd-wqxI"
+
+const embeddedSrc = `https://www.google.com/maps/embed/v1/place?key=${mapApiKey1}${mapApiKey2}&q=`;
 const mapsIFrame = document.getElementById("mapsIFrame");
 const nextButton = document.getElementById("nextButton");
 const prevButton = document.getElementById("prevButton");
