@@ -115,6 +115,11 @@ body{
     margin: 5px;
 }
 
+.lists, .fields{
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
 
 
 
